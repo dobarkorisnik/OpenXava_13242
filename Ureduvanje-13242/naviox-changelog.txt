@@ -1,0 +1,89 @@
+Change Log for NaviOX
+=====================
+
+NaviOX 2013v2.1 (2013-10-22)
+----------------------------
+- New NaviOXTestBase class to create jUnit tests for NaviOX modules with login and logout.
+- Fix: Links for list actions without image are black instead of blue.
+- Fix: Second level dialogs are shown too narrow with IE9.
+- Fix: Subcontrollers (drop-down menu in button bar) look very ugly.
+- Fix: Links of several actions associated to the same property are too close.
+- Fix: Request denied because CSRF attack with Tomcat 7.
+- Fix: Incorrect encoding in the first page load.
+
+NaviOX 2013v2 (2013-9-18)
+-------------------------
+- The user can change his own password.
+- It's needed to type the password twice when adding a new user or modifying his password.
+- LDAP support (tested with Active Directory).
+- It's possible to define the order for modules and subfolders in the hierarchical menu.
+- Users can be activated and deactivated.
+- Start button is not shown when there are not available modules.
+- Autologin using autologinUser and autologinPassword in naviox.properties.
+- First steps documentation improved.
+
+NaviOX 2013v1.1 (2013-7-2)
+--------------------------
+- Encrypted passwords are stored as hex (to deactivate use storePasswordAsHex=false in naviox.properties).
+- Fix: Password encryption does not work with MS SQL.
+- Fix: Fails with Oracle: ORA-00904: "FALSE" : not valid identifier.
+- Fix: Changing to another application fails trying to load a module of the previous application. 
+- Fix: Ugly outline on mode links after clicking on them with IE.
+- Fix: Module selection on left menu is lost after folder navigation.
+- Fix: Collections go off the dialogs.
+- Fix: Dialog font is different than plain view font.
+- Fix: Views with sections show the browser horizontal scrollbar.
+- Fix: Sections inside a frame are out of the frame.
+
+NaviOX 2013v1 (2013-5-7)
+------------------------
+- Hierarchical menu for the modules.
+- The modules list is hidden by default.
+- The modules list is hidden when a module is selected.
+- 'All modules' button renamed as 'Start'.
+- Fix: Inconsistent translations when the default language of the server is not English or Spanish.
+
+NaviOX 2012v3.1 (2013-1-30)
+---------------------------
+- Fix: Button bar is shown too small when there are no actions. 
+- Fix: Formatters defined in the application are applied to Role and Module properties.
+- Fix: Frames side by side are overlapped.
+- Fix: Inner frames stick out of the parent frame on the right side.
+- Fix: Multischema applications does not work.
+- Fix: Customizing collection fails with nested frames and collections in the same view.  
+- Fix: row-highlight CSS class missing.
+- Fix: Icons for images gallery frames does not use current look&feel (only effective with OX4.7+).
+- Fix: Images gallery minimize icon broken (only effective with OX4.7+).
+- Fix: Images gallery frame for each image too wide (only effective with OX4.7+).  
+
+NaviOX 2012v3 (2012-12-3)
+-------------------------
+- Customizable welcome page for sign in.
+- Customizable first steps page for the first time execution, to improve blank slate stage.
+- Added the properties givenName, familyName, jobTitle, middleName, nickName and birthDate to User.
+- Users.getCurrentUserInfo() from OpenXava works.
+- All labels and messages in English, Spanish and Catalan.
+
+NaviOX 2012v2.1 (2012-10-15)
+----------------------------
+- Module shows the list of its roles.
+- Added suite of jUnit tests.
+- Fix: NaviOX does not start if the application.xml has no modules.
+- Fix: When a module is marked as “Unrestricted” it appears twice in the modules list.
+- Fix: The application fails on starting when modules are remove from application.xml.
+
+NaviOX 2012v2 (2012-9-11)
+-------------------------
+- All new look & feel.
+- Separation of the LITE and Professional edition.
+- Property encryptPassword in naviox.properties to enable/disable the password encryption.
+- Includes a complete Commercial License Agreement.
+- Fix: Modifying any data of a user disables the user.
+
+NaviOX 2012v1 (formerly 0.1.1)
+------------------------------
+- Login/logout.
+- Management of users, modules and roles.
+- Access to modules restricted by roles.
+- Top bar navigation with the recently visited modules.
+- Searchable list of all modules.

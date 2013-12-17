@@ -1,0 +1,27 @@
+	<servlet>
+		<servlet-name>naviox</servlet-name>
+		<servlet-class>com.openxava.naviox.web.NaviOXServlet</servlet-class>
+	</servlet>
+	
+	<servlet>
+		<servlet-name>dwrNaviOXInvoker</servlet-name>
+		<servlet-class>uk.ltd.getahead.dwr.DWRServlet</servlet-class>
+		<init-param>
+			<param-name>config-naviox</param-name>
+			<param-value>WEB-INF/naviox-dwr.xml</param-value>
+		</init-param>
+		<init-param> 
+			<param-name>crossDomainSessionSecurity</param-name> 
+			<param-value>false</param-value> 
+		</init-param> 				
+	</servlet>
+		
+	<servlet-mapping>
+		<servlet-name>naviox</servlet-name>
+		<url-pattern>/m/*</url-pattern>
+	</servlet-mapping>		
+
+	<servlet-mapping>
+		<servlet-name>dwrNaviOXInvoker</servlet-name>
+		<url-pattern>/naviox/dwr/*</url-pattern>
+	</servlet-mapping>

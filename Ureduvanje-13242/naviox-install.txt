@@ -1,0 +1,15 @@
+To install NaviOX into your OpenXava application follow the next steps:
+1. Uncompress the NaviOX zip into your OpenXava application.
+2. Execute the updateOX or deployWar ant task.
+3. Restart Tomcat.
+
+Now your OpenXava application has a security and navigation system. 
+Try it:
+1. Open your browser and go to http://localhost:8080/MyApplication
+	(change 'MyApplication' by the name of your application)
+.
+2. Use 'admin' as user and 'admin' as password.
+
+WARNING!: NaviOX overwrites servlets.xml and filters.xml of your application,
+so if you use these files make a backup of them before installing NaviOX and 
+afterwards mix your files with the ones provided by NaviOX.  
